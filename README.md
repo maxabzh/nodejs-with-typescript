@@ -25,3 +25,15 @@ typescript@5.3.3
     ```
 7. Run command **tsc** in terminal to compile **./src/index.ts** to **./dist/index.js**.
 8. Run command **node ./dist/index** in terminal to launch app.
+9. Create **package.json** file in **root** directory or run command **npm init -y** in terminal to automatically create this file.
+10. Add to **package.json** file:
+    ```javascript
+    {
+        "scripts": {
+            "wts": "tsc --watch",
+            "wjs": "node --watch ./dist/index.js"
+        }
+    }
+    ```
+11. Run command **npm run wts** in terminal to track of changes in **./src/index.ts** file and compile **./src/index.ts** to **./dist/index.js**.
+12. Run command **npm run wjs** in another terminal to track of changes in **./src/index.ts** file and relaunch app.

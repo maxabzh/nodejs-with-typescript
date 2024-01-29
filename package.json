@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "wts": "tsc --watch",
+    "wjs": "node --watch ./dist/index.js"
+  }
+}
